@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "tipo": "Serie",
+    "nombre": "One Day",
+    "descripcion": "Emma y Dexter se conocen el día de su graduación y la historia sigue su amistad y amor a lo largo de 20 años, revisitando siempre el mismo día: el 15 de julio.",
+    "categoria": "Romance / Drama",
+    "capitulos": 14,
+    "plataforma": "Netflix",
+    "actores": ["Ambika Mod", "Leo Woodall"],
+    "imagen": "images/siempremismodia.jpg"
+  },
+  {
+    "id": 2,
+    "tipo": "Serie",
+    "nombre": "Bridgerton",
+    "descripcion": "En la Londres de la Regencia, la familia Bridgerton navega el mundo del romance y los escándalos de la alta sociedad en busca del amor.",
+    "categoria": "Romance / Drama histórico",
+    "capitulos": 24,
+    "plataforma": "Netflix",
+    "actores": ["Phoebe Dynevor", "Regé-Jean Page", "Jonathan Bailey"],
+    "imagen": "images/bridgerton.jpg"
+  },
+  {
+    "id": 3,
+    "tipo": "Serie",
+    "nombre": "Envidiosa",
+    "descripcion": "Una joven ambiciosa en Buenos Aires hace todo lo posible para ascender socialmente, enfrentando rivalidades, amores y traiciones en el camino.",
+    "categoria": "Drama",
+    "capitulos": 13,
+    "plataforma": "Netflix",
+    "actores": ["Agustina Cherri", "Benjamín Vicuña"],
+    "imagen": "images/envidiosa.jpg"
+  },
+  {
+    "id": 4,
+    "tipo": "Serie",
+    "nombre": "Gossip Girl",
+    "descripcion": "En el Upper East Side de Manhattan, una misteriosa bloguera revela los secretos más oscuros de la élite adolescente de Nueva York.",
+    "categoria": "Drama / Teen",
+    "capitulos": 121,
+    "plataforma": "Netflix",
+    "actores": ["Blake Lively", "Leighton Meester", "Penn Badgley"],
+    "imagen": "images/gossipgirl.jpg"
+  },
+  {
+    "id": 5,
+    "tipo": "Serie",
+    "nombre": "The Walking Dead",
+    "descripcion": "Un grupo de sobrevivientes lucha por mantenerse con vida en un mundo post-apocalíptico invadido por zombis, enfrentando también la crueldad humana.",
+    "categoria": "Terror / Drama",
+    "capitulos": 177,
+    "plataforma": "Disney+",
+    "actores": ["Andrew Lincoln", "Norman Reedus", "Melissa McBride"],
+    "imagen": "images/thewalking.jpg"
+  },
+  {
+    "id": 6,
+    "tipo": "Película",
+    "nombre": "Si tuviera 30",
+    "descripcion": "Una chica de 13 años desea desesperadamente ser mayor y al día siguiente aparece con el cuerpo de una mujer de 30, teniendo que aprender qué significa realmente crecer.",
+    "categoria": "Comedia romántica",
+    "duracion": "98 min",
+    "plataforma": "Netflix",
+    "actores": ["Jennifer Garner", "Mark Ruffalo"],
+    "imagen": "images/situviera.jpg"
+  },
+  {
+    "id": 7,
+    "tipo": "Película",
+    "nombre": "El diablo viste a la moda",
+    "descripcion": "Una joven recién graduada consigue trabajo como asistente de la editora de moda más temida de Nueva York, descubriendo el precio del éxito.",
+    "categoria": "Comedia dramática",
+    "duracion": "109 min",
+    "plataforma": "Disney+",
+    "actores": ["Meryl Streep", "Anne Hathaway", "Emily Blunt"],
+    "imagen": "images/eldiablovistealamoda.jpg"
+  },
+  {
+    "id": 8,
+    "tipo": "Película",
+    "nombre": "Avengers: Endgame",
+    "descripcion": "Los Vengadores supervivientes se unen una última vez para revertir el chasquido de Thanos y restaurar el universo en la batalla definitiva.",
+    "categoria": "Acción / Superhéroes",
+    "duracion": "181 min",
+    "plataforma": "Disney+",
+    "actores": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
+    "imagen": "images/avengers.webp"
+  },
+  {
+    "id": 9,
+    "tipo": "Película",
+    "nombre": "The Drama",
+    "descripcion": "Emma y Charlie son una pareja a punto de casarse hasta que ella revela un secreto que lo cambia todo, poniendo en duda la relación entera.",
+    "categoria": "Comedia romántica / Drama",
+    "duracion": "106 min",
+    "plataforma": "Cines",
+    "actores": ["Zendaya", "Robert Pattinson", "Alana Haim"],
+    "imagen": "images/thedrama.webp"
+  },
+  {
+  "id": 10,
+  "tipo": "Serie",
+  "nombre": "The Summer I Turned Pretty",
+  "descripcion": "Belly pasa cada verano en una casa de playa con su familia y los hermanos Conrad y Jeremiah. Este verano todo cambia cuando los sentimientos que siempre estuvo evitando salen a la luz.",
+  "categoria": "Romance / Drama",
+  "capitulos": 18,
+  "plataforma": "Prime Video",
+  "actores": ["Lola Tung", "Christopher Briney", "Gavin Casalegno"],
+  "imagen": "images/thesummer.webp"
+},
+{
+  "id": 11,
+  "tipo": "Película",
+  "nombre": "Avatar",
+  "descripcion": "Un marine parapléjico viaja al planeta Pandora donde, a través de un avatar Na'vi, se enamora de la cultura nativa y debe elegir entre su misión y proteger el mundo que aprendió a amar.",
+  "categoria": "Ciencia Ficción / Aventura",
+  "duracion": "162 min",
+  "plataforma": "Disney+",
+  "actores": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"],
+  "imagen": "images/avatar.webp"
+},
+{
+  "id": 12,
+  "tipo": "Película",
+  "nombre": "Zootopia",
+  "descripcion": "Judy Hopps, una conejita optimista, se convierte en la primera coneja policía de Zootopia y debe trabajar junto a un astuto zorro para resolver un misterioso caso de animales desaparecidos.",
+  "categoria": "Animación / Aventura",
+  "duracion": "108 min",
+  "plataforma": "Disney+",
+  "actores": ["Ginnifer Goodwin", "Jason Bateman", "Idris Elba"],
+  "imagen": "images/zootopia.webp"
+},
+{
+  "id": 13,
+  "tipo": "Película",
+  "nombre": "Oppenheimer",
+  "descripcion": "La historia del físico J. Robert Oppenheimer y su papel en el desarrollo de la bomba atómica durante el Proyecto Manhattan, y las consecuencias morales que esto trajo en su vida.",
+  "categoria": "Drama / Historia",
+  "duracion": "180 min",
+  "plataforma": "Prime Video",
+  "actores": ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr."],
+  "imagen": "images/oppenheimer.jpg"
+}
+    
+]

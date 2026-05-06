@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas y Series</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>CINELOG</h1>
+            <div class="buscador">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input 
+                    type="text" 
+                    v-model="busqueda" 
+                    placeholder="Buscar película o serie..."
+                >
+            </div>
+        </header>
+        <nav class="filtros">
+            <button @click="plataformaSeleccionada = 'Todas'" :class="{ 'filtro-activo': plataformaSeleccionada === 'Todas' }">
+                Todas
+            </button>
+            <span class="separador"></span>
+            <button @click="plataformaSeleccionada = 'Netflix'" :class="{ 'filtro-activo': plataformaSeleccionada === 'Netflix' }">
+                Netflix
+            </button>
+            <button @click="plataformaSeleccionada = 'Disney+'" :class="{ 'filtro-activo': plataformaSeleccionada === 'Disney+' }">
+                Disney+
+            </button>
+            <button @click="plataformaSeleccionada = 'Prime Video'" :class="{ 'filtro-activo': plataformaSeleccionada === 'Prime Video' }">
+                Prime Video
+            </button>
+            <button @click="plataformaSeleccionada = 'Cines'" :class="{ 'filtro-activo': plataformaSeleccionada === 'Cines' }">
+                Cines
+            </button>
+        </nav>
+        <main>
+            <div v-if="cargando" class="loader">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <p>Cargando...</p>
+            </div>
+            <div v-else class="grilla">
+                <div class="card" v-for="item in resultadosFiltrados" :key="item.id" @click="verMas(item)">
+                    <img :src="item.imagen" :alt="item.nombre">
+                    <div class="card-info">
+                        <span class="tipo">{{ item.tipo }}</span>
+                        <h2>{{ item.nombre }}</h2>
+                        <p class="categoria">{{ item.categoria}}</p>
+                        <p class="plataforma">{{ item.plataforma}}</p>
+                        <p class="descripcion" v-if="item.mostrarDesc">{{ item.descripcion}}</p>
+
+                        <div class="botones">
+                            <button @click="verMas(item)" class="btn-vermás">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            <button @click="toggleFavorito(item)" class="btn-favorito" :class="{ 'favorito-activo': item.favorito }">
+                                <i :class="item.favorito ? 'fa-solid fa-heart' : 'fa-regular fa-heart'"></i>
+                            </button>
+                            <button @click="eliminar(item.id)" class="btn-eliminar">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-info">
+                <p>PRODUCIDO POR</p>
+                <p class="nombre">Lucila Corvalan</p>
+                <p class="mail">
+                    <a href="mailto:lucilacorvalan@hotmail.com">
+                        <i class="fa-solid fa-envelope"></i> lucilacorvalan@hotmail.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-redes">
+                <a href="https://instagram.com/lulaacorvalan_" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="www.linkedin.com/in/lucila-ailen-corvalan-2830a2379" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/tuusuario" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>    
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
