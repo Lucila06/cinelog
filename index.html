@@ -54,7 +54,7 @@
                         <p class="descripcion" v-if="item.mostrarDesc">{{ item.descripcion}}</p>
 
                         <div class="botones">
-                            <button @click="verMas(item)" class="btn-vermás">
+                            <button @click.stop="verMas(item)" class="btn-vermás">
                                 <i class="fa-solid fa-circle-info"></i>
                             </button>
                             <button @click="toggleFavorito(item)" class="btn-favorito" :class="{ 'favorito-activo': item.favorito }">
